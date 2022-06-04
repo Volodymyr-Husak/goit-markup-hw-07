@@ -120,6 +120,7 @@ img {
     margin: -1px;
 }
 
+/* заголовки */
 .title {
     font-weight: 700;
     font-size: 36px;
@@ -906,13 +907,6 @@ img {
 /* ================== */
 .work__title {
     margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-
-    color: var(--title-color);
 }
 
 .work-list {
@@ -996,16 +990,9 @@ img {
 /* title */
 .title-team {
     margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-
-    color: var(--title-color);
 }
 
-.team .title {
+.list-team .title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
