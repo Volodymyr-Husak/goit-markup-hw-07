@@ -889,7 +889,6 @@ img {
     background-color: var(--background-color-portfolio-btn);
 }
 
-/* title */
 .benefits-list__title {
     margin-bottom: 10px;
 
@@ -905,7 +904,7 @@ img {
 /* ================== */
 /*    WHAT WE DO */
 /* ================== */
-.work-title {
+.work__title {
     margin-bottom: 50px;
 
     font-weight: 700;
@@ -1067,15 +1066,15 @@ img {
 /*      CLIENTS */
 /* ================== */
 
-.title-clients {
+.clients__title {
     margin-bottom: 50px;
 }
 
-.list-logo {
+.logo-list {
     display: flex;
 }
 
-.link-logo {
+.logo-list__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1095,15 +1094,17 @@ img {
 
 }
 
-.list-logo .item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.link-logo:hover,
-.link-logo:focus {
+.logo-list__link:hover,
+.logo-list__link:focus {
     border: 1px solid var(--blue-color);
     fill: var(--blue-color);
 }
+
+.logo-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
 
 /* =============================================== */
 /*                      PORTFOLIO */
