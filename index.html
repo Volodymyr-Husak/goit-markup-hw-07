@@ -63,18 +63,18 @@
     <main>
         <!-- Герой -->
         <section class="hero">
-            <div class="container hero-container">
-                <h1 class="hero-title">Эффективные решения<br />для вашего бизнеса</h1>
+            <div class="container hero__container">
+                <h1 class="hero__title">Эффективные решения<br />для вашего бизнеса</h1>
                 <button class="btn hero-btn" type="button" data-modal-open>Заказать услугу</button>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal-wrapper">
-                        <button class="modal-btn" type="button" data-modal-close aria-label="Закрить">
-                            <svg width="11" height="11">
+                        <button class="btn modal-btn" type="button" data-modal-close aria-label="Закрить">
+                            <svg class="modal-btn__icon" width="11" height="11">
                                 <use href="./images/icon/sprite.svg#modal-btn"></use>
                             </svg>
                         </button>
                         <form class="modal-form" name="form-order-service">
-                            <h2 class="title title-form">Оставьте свои данные, мы вам перезвоним</h2>
+                            <h2 class="title modal-form__title">Оставьте свои данные, мы вам перезвоним</h2>
                             <div class="input-container">
                                 <input class="input-form" type="text" id="name" name="user-name" placeholder=" "
                                     minlength="3" required>
