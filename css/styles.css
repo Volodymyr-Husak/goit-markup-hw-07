@@ -216,11 +216,11 @@ img {
     opacity: 1;
 }
 
-.current {
+.navigation__link--current {
     color: var(--blue-color);
 }
 
-.current::after {
+.navigation__link--current::after {
     position: absolute;
 
     content: "";
