@@ -1,0 +1,36 @@
+/* ================== */
+/*        BODY */
+/* ================== */
+body {
+    margin: 0;
+
+    font-family: Roboto, sans-serif;
+    /* font-style: normal;
+    font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    color: var(--main-color);
+    background-color: var(--white-color);
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.btn {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    color: var(--title-color);
+}
