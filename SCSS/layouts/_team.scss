@@ -94,12 +94,10 @@
     transition: background-color var(--fast-time) var(--easy-in-out),
         fill var(--fast-time) var(--easy-in-out);
 
-}
-
-
-.link-team-icons:hover,
-.link-team-icons:focus {
-    fill: var(--white-color);
-    background-color: var(--bg-cl-hero-btn-hover);
-    border-radius: 50%;
+    &:hover,
+    &:focus {
+        fill: var(--white-color);
+        background-color: var(--bg-cl-hero-btn-hover);
+        border-radius: 50%;
+    }
 }

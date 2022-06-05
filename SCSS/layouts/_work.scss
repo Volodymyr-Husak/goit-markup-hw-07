@@ -8,33 +8,33 @@
 .work-list {
     display: flex;
     justify-content: space-between;
-}
 
-.work-list__item {
-    position: relative;
-}
+    &__item {
+        position: relative;
+    }
 
-.work-list__item:not(:last-child) {
-    margin-right: 30px;
-}
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
 
-.work-list__description {
-    display: flex;
-    width: 100%;
-    height: 70px;
-    background-color: var(--bg-work-description);
+    &__description {
+        display: flex;
+        width: 100%;
+        height: 70px;
+        background-color: var(--bg-work-description);
 
-    justify-content: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;
 
-    position: absolute;
-    left: 0;
-    bottom: 0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
 
-    color: var(--white-color);
+        color: var(--white-color);
+    }
 }

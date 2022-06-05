@@ -17,23 +17,23 @@
     background-color: var(--bg-grey-cl);
     background-image: url(../images/hero/hero-bg.png),
         url(../images/hero/hero-img.png);
-}
 
-.hero__container {
-    text-align: center;
-}
+    &__container {
+        text-align: center;
+    }
 
-.hero__title {
-    margin-bottom: 30px;
+    &__title {
+        margin-bottom: 30px;
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
 
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
 
-    color: var(--white-color);
+        color: var(--white-color);
+    }
 }
 
 .hero-btn {
@@ -56,9 +56,9 @@
     background-color: var(--blue-color);
 
     transition: background-color var(--fast-time) var(--easy-in-out);
-}
 
-.hero-btn:focus,
-.hero-btn:hover {
-    background-color: var(--bg-cl-hero-btn-hover);
+    &:focus,
+    &:hover {
+        background-color: var(--bg-cl-hero-btn-hover);
+    }
 }

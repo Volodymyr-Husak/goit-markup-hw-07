@@ -3,30 +3,15 @@
 /* ================== */
 .header {
     border-bottom: 1px solid var(--brd-bot-header);
-}
 
-.header__container {
-    display: flex;
-    align-items: center;
-}
+    &__container {
+        display: flex;
+        align-items: center;
+    }
 
-.header__logo {
-    margin-right: 94px;
-}
-
-.logo {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-
-    text-decoration: none;
-
-    color: var(--blue-color);
-}
-
-.logo--black {
-    color: var(--black-color);
+    &__logo {
+        margin-right: 94px;
+    }
 }
 
 .navigation__list {
@@ -52,59 +37,57 @@
     color: var(--title-color);
 
     transition: color var(--fast-time) var(--easy-in-out);
+
+    &:focus,
+    &:hover {
+        color: var(--blue-color);
+        fill: var(--blue-color);
+    }
+
+    &::after {
+        position: absolute;
+
+        content: "";
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: var(--blue-color);
+
+        bottom: -1px;
+        left: 0;
+        border-radius: 2px;
+
+        opacity: 0;
+
+        transition: opacity var(--fast-time) var(--easy-in-out);
+    }
+
+    &:hover::after,
+    &:focus::after {
+        opacity: 1;
+    }
+
+    &--current {
+        color: var(--blue-color);
+    }
+
+    &--current::after {
+        position: absolute;
+
+        content: "";
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: var(--blue-color);
+
+        bottom: -1px;
+        left: 0;
+        border-radius: 2px;
+
+        opacity: 1;
+    }
 }
 
-.navigation__link:focus,
-.navigation__link:hover {
-    color: var(--blue-color);
-    fill: var(--blue-color);
-}
-
-/* Підкреслення */
-.navigation__link::after {
-    position: absolute;
-
-    content: "";
-    display: block;
-    height: 4px;
-    width: 100%;
-    background-color: var(--blue-color);
-
-    bottom: -1px;
-    left: 0;
-    border-radius: 2px;
-
-    opacity: 0;
-
-    transition: opacity var(--fast-time) var(--easy-in-out);
-}
-
-.navigation__link:hover::after,
-.navigation__link:focus::after {
-    opacity: 1;
-}
-
-.navigation__link--current {
-    color: var(--blue-color);
-}
-
-.navigation__link--current::after {
-    position: absolute;
-
-    content: "";
-    display: block;
-    height: 4px;
-    width: 100%;
-    background-color: var(--blue-color);
-
-    bottom: -1px;
-    left: 0;
-    border-radius: 2px;
-
-    opacity: 1;
-}
-
-/* contact */
 .header__contact {
     display: flex;
     margin-left: auto;
@@ -128,12 +111,12 @@
     fill: var(--main-color);
 
     transition: color var(--fast-time) var(--easy-in-out);
-}
 
-.header__link:focus,
-.header__link:hover {
-    color: var(--blue-color);
-    fill: var(--blue-color);
+    &:focus,
+    &:hover {
+        color: var(--blue-color);
+        fill: var(--blue-color);
+    }
 }
 
 .header__icon {

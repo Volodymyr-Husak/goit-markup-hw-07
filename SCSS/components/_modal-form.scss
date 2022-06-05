@@ -77,11 +77,11 @@
     background-color: var(--white-color);
 
     transition: fill var(--fast-time) var(--easy-in-out);
-}
 
-.modal-btn:hover,
-.modal-btn:focus {
-    fill: var(--blue-color);
+    &:hover,
+    &:focus {
+        fill: var(--blue-color);
+    }
 }
 
 /* modal-form */
@@ -120,7 +120,6 @@
     transition: transform var(--fast-time) var(--easy-in-out);
 }
 
-
 .input-form {
     padding-left: 42px;
 
@@ -138,22 +137,20 @@
     cursor: pointer;
 
     transition: border var(--fast-time) var(--easy-in-out);
-}
 
-.input-form:focus {
-    border: 1px solid var(--blue-color);
-    outline: transparent;
-}
+    &:focus {
+        border: 1px solid var(--blue-color);
+        outline: transparent;
+    }
 
-.input-form:focus~.input-icon {
-    fill: var(--blue-color);
-}
+    &:focus~.input-icon {
+        fill: var(--blue-color);
+    }
 
-.input-form:focus~.label-form,
-.input-form:not(:placeholder-shown)~.label-form {
-
-    transform: translate(-42px, -37px);
-
+    &:focus~.label-form,
+    &:not(:placeholder-shown)~.label-form {
+        transform: translate(-42px, -37px);
+    }
 }
 
 .input-icon {
@@ -216,20 +213,19 @@
     cursor: pointer;
 
     transition: border var(--fast-time) var(--easy-in-out);
-}
 
-.textarea-form-comment:focus {
-    border: 1px solid var(--blue-color);
-    outline: transparent;
-}
+    &:focus {
+        border: 1px solid var(--blue-color);
+        outline: transparent;
+    }
 
-.textarea-form-comment::placeholder {
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
+    &::placeholder {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
 
-    color: var(--placeholder-color);
-
+        color: var(--placeholder-color);
+    }
 }
 
 /* Політика приватності (чекбокс) */
@@ -244,7 +240,6 @@
 
 .checkbox {
     appearance: none;
-
 }
 
 .custom-checkbox {
@@ -268,7 +263,6 @@
 }
 
 .checkbox:checked+.custom-checkbox {
-
     outline: 2px solid var(--blue-color);
 }
 
@@ -303,9 +297,9 @@
     border: none;
 
     transition: background-color var(--fast-time) var(--easy-in-out);
-}
 
-.form-btn:focus,
-.form-btn:hover {
-    background-color: var(--bg-cl-hero-btn-hover);
+    &:focus,
+    &:hover {
+        background-color: var(--bg-cl-hero-btn-hover);
+    }
 }
