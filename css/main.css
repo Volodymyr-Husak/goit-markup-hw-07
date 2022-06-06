@@ -728,6 +728,27 @@ img {
           justify-content: space-between;
 }
 
+.list-team .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list-team .title {
+  margin-bottom: 10px;
+}
+
+.list-team .text {
+  margin-bottom: 16px;
+}
+
+.list-team .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: inherit;
+  text-align: center;
+  color: var(--title-color);
+}
+
 .team {
   /* min-width: 1600px; */
   margin-left: auto;
@@ -748,30 +769,8 @@ img {
   padding-bottom: 30px;
 }
 
-.list-team .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.list-team .title {
-  margin-bottom: 10px;
-}
-
-.list-team .text {
-  margin-bottom: 16px;
-}
-
-/* title */
 .title-team {
   margin-bottom: 50px;
-}
-
-.list-team .title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: inherit;
-  text-align: center;
-  color: var(--title-color);
 }
 
 .text {
