@@ -769,13 +769,16 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: inherit;
   text-align: center;
   color: var(--title-color);
 }
 
 .text {
+  font-weight: inherit;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: inherit;
   text-align: center;
 }
 
@@ -813,8 +816,10 @@ img {
   height: 44px;
   border-radius: 50%;
   fill: var(--grey-cl-icons);
-  -webkit-transition: background-color var(--fast-time) var(--easy-in-out), fill var(--fast-time) var(--easy-in-out);
-  transition: background-color var(--fast-time) var(--easy-in-out), fill var(--fast-time) var(--easy-in-out);
+  -webkit-transition: background-color var(--fast-time) var(--easy-in-out);
+  transition: background-color var(--fast-time) var(--easy-in-out);
+  -webkit-transition: fill var(--fast-time) var(--easy-in-out);
+  transition: fill var(--fast-time) var(--easy-in-out);
 }
 
 .link-team-icons:hover, .link-team-icons:focus {

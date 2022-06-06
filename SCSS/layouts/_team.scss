@@ -8,7 +8,6 @@
 
 .team {
     /* min-width: 1600px; */
-
     margin-left: auto;
     margin-right: auto;
 
@@ -48,9 +47,10 @@
 }
 
 .list-team .title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    // font-weight: 500;
+    // font-size: 16px;
+    // line-height: 1.19;
+    @include fonts(500, 16px, 1.19, inherit);
 
     text-align: center;
 
@@ -58,8 +58,10 @@
 }
 
 .text {
-    font-size: 16px;
-    line-height: 1.19;
+    // font-size: 16px;
+    // line-height: 1.19;
+    @include fonts(inherit, 16px, 1.19, inherit);
+
 
     text-align: center;
 }
@@ -73,7 +75,6 @@
     margin-right: auto;
     justify-content: center;
     align-items: center;
-
 }
 
 .item-icons:not(:last-child) {
@@ -91,8 +92,11 @@
     border-radius: 50%;
 
     fill: var(--grey-cl-icons);
-    transition: background-color var(--fast-time) var(--easy-in-out),
-        fill var(--fast-time) var(--easy-in-out);
+
+    // transition: background-color var(--fast-time) var(--easy-in-out),
+    //     fill var(--fast-time) var(--easy-in-out);
+    @include transition(background-color);
+    @include transition(fill);
 
     &:hover,
     &:focus {
