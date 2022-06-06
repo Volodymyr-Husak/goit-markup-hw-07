@@ -1,23 +1,11 @@
 // utils
-@import './utils/vars';
-@import './utils/hidden';
-@import './utils/mixins';
+@import './utils/index';
 
 // base
-@import './base/common';
-@import './base/container';
-@import './base/reset';
+@import './base/index';
 
 // components
-@import './components/modal-form';
-@import './components/logo';
+@import './components/index';
 
 // layouts
-@import './layouts/header';
-@import './layouts/hero';
-@import './layouts/benefits';
-@import './layouts/work';
-@import './layouts/team';
-@import './layouts/clients';
-@import './layouts/footer';
-@import './layouts/portfolio';
+@import './layouts/index';
