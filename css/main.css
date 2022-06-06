@@ -479,6 +479,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
+  font-size: inherit;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
@@ -545,6 +546,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
+  font-size: inherit;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);

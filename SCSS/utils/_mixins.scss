@@ -1,19 +1,39 @@
-@mixin fonts($fw, $fs, $lh, $ls, $tt: false) {
-    font-weight: $fw;
-    font-size: $fs;
-    line-height: setLineHeight($lh, $fs);
-    letter-spacing: $ls;
+ // font-weight: 500;
+ // line-height: 1.14;
+ // letter-spacing: 0.02em;
 
-    @if $tt {
-        text-transform: $tt;
-    }
-}
+ //  font-weight: 900;
+ //  font-size: 44px;
+ //  line-height: 1.36;
+ //  letter-spacing: 0.06em;
 
-@mixin transition($property) {
-    $duration: 250ms;
-    $timing-function: ease;
+ @mixin fonts($fw, $fs, $lh, $ls, $tt: false) {
+     font-weight: $fw;
+     font-size: $fs;
+     line-height: $lh;
+     letter-spacing: $ls;
 
-    transition-property: $property;
-    transition-duration: $duration;
-    transition-timing-function: $timing-function;
-}
+     @if $tt {
+         text-transform: $tt;
+     }
+ }
+
+ // transition: color var(--fast-time) var(--easy-in-out);
+ @mixin transition($property) {
+     $duration: var(--fast-time);
+     $timing-function: var(--easy-in-out);
+
+     transition: $property $duration $timing-function;
+     //  transition-property: $property;
+     //  transition-duration: $duration;
+     //  transition-timing-function: $timing-function;
+ }
+
+ //   @mixin transition($property) {
+ //       $duration: 250ms;
+ //       $timing-function: ease;
+
+ //       transition-property: $property;
+ //       transition-duration: $duration;
+ //       transition-timing-function: $timing-function;
+ //   }
