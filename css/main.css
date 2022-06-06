@@ -28,6 +28,8 @@
   --fast-time: 250ms;
   /* Змінна cubic-bezier */
   --easy-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  /* Шрифти */
+  --main-font-family: Roboto, sans-serif;
 }
 
 /* Приховані заголовки */
@@ -50,9 +52,7 @@
 /* ================== */
 body {
   margin: 0;
-  font-family: Roboto, sans-serif;
-  /* font-style: normal;
-    font-weight: 400; */
+  font-family: var(--main-font-family);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
