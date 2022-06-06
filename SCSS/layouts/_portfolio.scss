@@ -19,9 +19,10 @@
     border: 1px solid transparent;
     border-radius: 4px;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
+    // font-weight: 500;
+    // font-size: 16px;
+    // line-height: 1.62;
+    @include fonts(500, 16px, 1.62, inherit);
 
     text-align: center;
 
@@ -31,6 +32,9 @@
     transition: background-color var(--fast-time) var(--easy-in-out),
         color var(--fast-time) var(--easy-in-out),
         box-shadow var(--fast-time) var(--easy-in-out);
+    // @include transition(color);
+    // @include transition(box-shadow);
+    // @include transition(background-color);
 
     &:focus,
     &:hover {
@@ -69,7 +73,8 @@
 
     background-color: var(--white-color);
 
-    transition: box-shadow var(--fast-time) var(--easy-in-out);
+    // transition: box-shadow var(--fast-time) var(--easy-in-out);
+    @include transition(box-shadow);
 
     &:nth-child(3n) {
         margin-right: 0;
@@ -95,26 +100,27 @@
 .title-cards {
     margin-bottom: 4px;
 
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-
-    letter-spacing: 0.06em;
+    // font-weight: 700;
+    // font-size: 18px;
+    // line-height: 2;
+    // letter-spacing: 0.06em;
+    @include fonts(700, 18px, 2, 0.06em);
 
     color: var(--title-color);
 }
 
 .text-cards {
-    font-size: 16px;
-    line-height: 1.88;
+    // font-size: 16px;
+    // line-height: 1.88;
+    @include fonts(inherit, 16px, 1.88, inherit);
 
     color: var(--main-color);
 }
 
 .img-portfolio-description {
     position: absolute;
-    /* left: 0; */
-    /* top: 0; */
+    // left: 0; 
+    // top: 0; 
 
     display: flex;
     justify-content: center;
@@ -125,12 +131,15 @@
     max-width: 100%;
     height: 294px;
 
-    transition: transform var(--fast-time) var(--easy-in-out);
+    // transition: transform var(--fast-time) var(--easy-in-out);
+    @include transition(transform);
 
     background-color: var(--bg-portfolio-description);
 
-    font-size: 18px;
-    line-height: 1.56;
+    // font-size: 18px;
+    // line-height: 1.56;
+    @include fonts(inherit, 18px, 1.56, inherit);
+
     color: var(--white-color);
 }
 

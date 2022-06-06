@@ -93,10 +93,10 @@
 
     fill: var(--grey-cl-icons);
 
-    // transition: background-color var(--fast-time) var(--easy-in-out),
-    //     fill var(--fast-time) var(--easy-in-out);
-    @include transition(background-color);
-    @include transition(fill);
+    transition: background-color var(--fast-time) var(--easy-in-out),
+        fill var(--fast-time) var(--easy-in-out);
+    // @include transition(background-color);
+    // @include transition(fill);
 
     &:hover,
     &:focus {
