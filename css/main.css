@@ -913,8 +913,9 @@ img {
 
 .footer-title {
   font-weight: 700;
-  font-size: 14px;
+  font-size: inherit;
   line-height: 1.17;
+  letter-spacing: inherit;
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
@@ -965,8 +966,9 @@ img {
   display: inline-block;
   margin-bottom: 20px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: inherit;
   line-height: 1.17;
+  letter-spacing: inherit;
   text-transform: uppercase;
   color: var(--white-color);
 }

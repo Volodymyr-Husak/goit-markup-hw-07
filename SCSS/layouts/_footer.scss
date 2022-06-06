@@ -40,10 +40,11 @@
 }
 
 .footer-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.17;
-    text-transform: uppercase;
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.17;
+    // text-transform: uppercase;
+    @include fonts(700, inherit, 1.17, inherit, uppercase);
 
     color: var(--white-color);
 
@@ -61,7 +62,8 @@
     border-radius: 50%;
     fill: var(--white-color);
 
-    transition: background-color var(--fast-time) var(--easy-in-out);
+    // transition: background-color var(--fast-time) var(--easy-in-out);
+    @include transition(background-color);
 
     &:hover,
     &:focus {
@@ -93,10 +95,11 @@
     display: inline-block;
     margin-bottom: 20px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.17;
-    text-transform: uppercase;
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.17;
+    // text-transform: uppercase;
+    @include fonts(700, inherit, 1.17, inherit, uppercase);
 
     color: var(--white-color);
 }
@@ -138,14 +141,16 @@
     background-color: var(--blue-color);
     color: var(--white-color);
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
+    // font-weight: 700;
+    // font-size: 16px;
+    // line-height: 1.88;
+    // letter-spacing: 0.06em;
+    @include fonts(700, 16px, 1.88, 0.06em);
 
     cursor: pointer;
 
-    transition: background-color var(--fast-time) var(--easy-in-out);
+    // transition: background-color var(--fast-time) var(--easy-in-out);
+    @include transition(background-color);
 
     &:focus,
     &:hover {
