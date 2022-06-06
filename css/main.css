@@ -660,8 +660,9 @@ img {
 .benefits-list__title {
   margin-bottom: 10px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: inherit;
   line-height: 1.14;
+  letter-spacing: inherit;
   text-transform: uppercase;
   text-align: left;
   color: var(--title-color);
@@ -708,8 +709,9 @@ img {
   left: 0;
   bottom: 0;
   font-weight: 700;
-  font-size: 14px;
+  font-size: inherit;
   line-height: 1.14;
+  letter-spacing: inherit;
   text-transform: uppercase;
   color: var(--white-color);
 }

@@ -33,10 +33,12 @@
     &__title {
         margin-bottom: 10px;
 
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        text-transform: uppercase;
+        // font-weight: 700;
+        // font-size: 14px;
+        // line-height: 1.14;
+        // text-transform: uppercase;
+        @include fonts(700, inherit, 1.14, inherit, uppercase);
+
         text-align: left;
 
         color: var(--title-color);
