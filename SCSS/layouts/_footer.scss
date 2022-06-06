@@ -14,10 +14,10 @@
 
 .footer-list-address {
     margin-top: 20px;
-}
 
-.footer-list-address .item:not(:last-child) {
-    margin-bottom: 9px;
+    .item:not(:last-child) {
+        margin-bottom: 9px;
+    }
 }
 
 .footer-address {
